@@ -1,9 +1,24 @@
 body {
     font-family: "Dosis";
-    height: 100%;
+    position: relative;
+    height: calc(100vh - 80px);
     margin: 0px;
     background-image: linear-gradient(to bottom right, rgba(255, 99, 71, 0.4), rgba(255, 99, 71, 0.2));
     background-attachment:fixed;
+}
+
+header {
+    margin-right: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 10px;
 }
 
 div {margin: 30px;}
@@ -25,4 +40,10 @@ ul {list-style-type: circle;}
     display: inline-block;
     margin-left: 0px;
     margin-top: 0px;
+}
+
+footer {
+    position: absolute;
+    left: 20px;
+    bottom: -50px;
 }
